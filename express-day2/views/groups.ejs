@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title> Champions League Groups </title>
+</head>
+<body>
+     <h1> <%= name %> </h1>
+     <% for(var i=0; i < groups.length; i++){ %>
+     <ul>
+          <li><a href="/groups/<%=groups[i].name.substr(-1)%>"><%= groups[i].name %></a></li>
+     </ul>
+     <% }; %>
+</body>
+</html>

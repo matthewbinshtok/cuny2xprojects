@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title> Group <%= group.name %> </title>
+</head>
+<body>
+     <h1> <%= group.name %> </h1>
+     <% for(var i=0; i < group.teams.length; i++){ %>
+     <ul>
+          <li><a href="/groups/<%=group.name.substr(-1)%>/<%= group.teams[i].key %>"><%= group.teams[i].name %></a></li>
+     </ul>
+     <% }; %>
+</body>
+</html>
