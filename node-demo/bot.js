@@ -11,7 +11,7 @@ const worldcupendpoint = 'http://api.football-data.org/v1/competitions/467';
 const fixturesappend = '/fixtures?matchday=1';
 const teamsappend = '/teams';
 const groupsappend = '/leagueTable';
-// !REMOVED MY API KEY 
+// !REMOVED MY API KEY
 
 // API key
 const options = {
@@ -119,9 +119,9 @@ function generateResponse(T, mention){
                var group = getTeamGroup(teamname);
                var newTweet = team + ' (' + code + ')\n\n' + group;
                console.log(newTweet);
-               /*T.post('statuses/update', { status: newTweet }, function(err, data, response) {
+               T.post('statuses/update', { status: newTweet }, function(err, data, response) {
                     var newTweetId = data.id_str;
-                    console.log("Tweeted: " + newTweetId);*/
+                    console.log("Tweeted: " + newTweetId);
           }
      }
 }
