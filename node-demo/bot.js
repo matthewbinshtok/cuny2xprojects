@@ -42,36 +42,6 @@ var teamsdata = {};
                next match: GER vs MEX (date/time)
 */
 
-/*T.post('statuses/update', { status: 'the greatest troll has awoke' }, function(err, data, response) {
-console.log(data)
-})*/
-
-
-/*http.get(worldcupendpoint+fixturesappend, (resp) => {
-let data = '';
-
-// A chunk of data has been recieved.
-resp.on('data', (chunk) => {
-data += chunk;
-});
-
-// The whole response has been received. Print out the result.
-resp.on('end', () => {
-let newdata = JSON.parse(data);
-let matches = newdata.count;
-for (let i = 0; i < matches; i++){
-let hometeam = newdata.fixtures[i].homeTeamName;
-let awayteam = newdata.fixtures[i].awayTeamName;
-let date = newdata.fixtures[i].date;
-console.log(hometeam + ' v ' + awayteam);
-}
-//console.log(matches);
-});
-
-}).on("error", (err) => {
-console.log("Error: " + err.message);
-});*/
-
 // populateTeams()
 // populates global teams array
 function populateTeams(){
@@ -119,9 +89,9 @@ function generateResponse(T, mention){
                var group = getTeamGroup(teamname);
                var newTweet = team + ' (' + code + ')\n\n' + group;
                console.log(newTweet);
-               T.post('statuses/update', { status: newTweet }, function(err, data, response) {
+               /*T.post('statuses/update', { status: newTweet }, function(err, data, response) {
                     var newTweetId = data.id_str;
-                    console.log("Tweeted: " + newTweetId);
+                    console.log("Tweeted: " + newTweetId);*/
           }
      }
 }
