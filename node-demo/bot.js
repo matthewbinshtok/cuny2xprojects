@@ -11,6 +11,7 @@ const worldcupendpoint = 'http://api.football-data.org/v1/competitions/467';
 const fixturesappend = '/fixtures?matchday=1';
 const teamsappend = '/teams';
 const groupsappend = '/leagueTable';
+// !REMOVED MY API KEY 
 
 // API key
 const options = {
