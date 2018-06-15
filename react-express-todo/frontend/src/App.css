@@ -1,0 +1,189 @@
+.App {
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     background-color: violet;
+     height: 100%;
+     width: 100%;
+}
+
+.App-header {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-end;
+     background-color: #222;
+     height: 50px;
+     padding: 20px;
+}
+
+.App-name {
+     font-size: 2em;
+     color: violet;
+     margin: 0;
+}
+
+.App-credits {
+     font-size: 1em;
+     font-style: italic;
+     color: grey;
+     margin: 0;
+}
+
+.App-intro {
+     font-size: 1.5em;
+     margin: 0px;
+}
+
+.content-wrapper {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: center;
+}
+
+.instructions {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     text-align: center;
+     align-items: center;
+     width: 75%;
+}
+
+.instructions h3 {
+     margin: 0;
+     margin-top: 10px;
+     font-style: italic;
+}
+
+.main-content {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     width: 100%;
+}
+
+.task-input {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     width: 30%;
+     padding: 10px;
+}
+
+.add-task-button {
+     width: 100px;
+     height: 35px;
+     background-color: powderblue;
+     border: 2px solid black;
+     color: blue;
+     font-size: 1em;
+     margin: 10px;
+}
+
+.add-task-field {
+     width: 200px;
+     height: 30px;
+     border: 2px solid black;
+     font-size: 1em;
+     margin: 10px;
+}
+
+.to-do-list {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     width: 30%;
+     padding: 10px;
+}
+
+.completed-label {
+     font-size: 1.5em;
+     margin: 0px;
+}
+
+.task-wrapper {
+     padding: 3px;
+     margin-left: 5px;
+}
+
+.starred-task-wrapper {
+     padding: 3px;
+     margin-left: 10px;
+     color: red;
+     font-weight: bold;
+}
+
+#remove-task-button {
+     width: 30px;
+     height: 30px;
+     background-color: powderblue;
+     border: 2px solid black;
+     color: red;
+     font-size: 1em;
+     font-weight: bold;
+     text-align: center;
+     margin-left: 3px;
+}
+
+#checked-button {
+     width: 32px;
+     height: 32px;
+     background-color: powderblue;
+     border: 2px solid black;
+     color: green;
+     font-size: 1em;
+     margin-left: 1px;
+}
+
+#star-task-button {
+     width: 32px;
+     height: 32px;
+     background-color: powderblue;
+     border: 2px solid black;
+     color: blue;
+     font-size: 1em;
+     margin-left: 1px;
+}
+
+.completed-tasks-list {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     width: 30%;
+     padding: 10px;
+}
+
+ul {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     list-style-type: none;
+}
+
+ul#to-do li {
+     display: flex;
+     width: 100%;
+     flex-direction: row;
+     justify-content: flex-start;
+     align-items: center;
+     padding: 3px;
+}
+
+ul#completed {
+     padding: 0;
+}
+
+ul#completed li:before {
+     content: '✓';
+     margin-right: 10px;
+}
+
+ul#completed li {
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     align-items: center;
+     width: 80%;
+}
